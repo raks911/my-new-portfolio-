@@ -1,0 +1,100 @@
+.Con-container{
+    width: 90%;
+    margin: auto;
+    padding:50px;
+    display:flex;
+}
+.Con-left{
+    flex:1;
+}
+.Con-left-title{
+    font-size:60px;
+    wdth: 70%;
+    color:#00CCCC;
+}
+.Con-left-describe-items{
+    display:flex;
+    align-items:center;
+    margin:50px 0px;
+    font-weight:300;
+    width:50%;
+    color:#00CCCC;
+    backface-visibility:hidden;
+ 
+}
+.Con-left-describe-items:hover{
+    border-bottom:1px solid #00CCCC;
+}
+.Con-logo{
+    widht:30px;
+    height:30px;
+    margin-right:20px;
+    background-color:#00CCCC;
+}
+.Con-right{
+    flex:1;
+    border-left:3px solid #00CCCC;
+}
+
+.Con-form{
+    margin:20px;
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    width:70%;
+    height:50px;
+    border:none;
+    border-bottom:1px solid #00CCCC;
+    margin:10px 70px;
+    font-size:20px;
+    padding-left:10px;
+    background:none;
+    color: #00CCCC;
+    border:1px solid #00CCCC;
+}
+textarea:focus, input:focus {
+    boX-shadow:0px 0px 2.5px 2.5px #00CCCC;
+}
+
+textarea{
+    width:90%;
+    margin:10px 0px;
+    font-size:14px;
+    padding-left:10px;
+    border-bottom:1px solid #00CCCC;
+    margin:10px 70px;
+    font-size:20px;
+    padding-left:10px;
+    background:none;
+    color: #00CCCC;
+    border:1px solid #00CCCC;
+}
+button{
+    margin:10px 70px;
+    width:23%;
+    padding:8px;
+    border-radius: 7px;
+    font-size:22px;
+    font-weight: 700;    
+    background:#00CCCC;
+}
+@media screen and (max-width:900px) {
+    .Con-container{
+        flex-direction: column;
+    }
+    .Con-right{
+        border:none;
+
+    }
+    input,textarea{
+        width:80%;
+        margin:10px -10px;
+        
+    }
+    button{
+        width:23%;
+        margin:10px -10px;
+    }
+}
